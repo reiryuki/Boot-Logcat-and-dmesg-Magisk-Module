@@ -10,7 +10,7 @@
 - Magisk or KernelSU installed
 
 ## Installation Guide & Download Link
-- Install this module https://www.pling.com/p// via Magisk app or KernelSU app or Recovery if Magisk installed
+- Install this module https://www.pling.com/p/2227830/ via Magisk app or KernelSU app or Recovery if Magisk installed
 - Reboot
 - Check the debug-boot-logcat.log and debug-boot-dmesg.log at /data/adb/modules/BootLogcat/
 
