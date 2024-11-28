@@ -1,0 +1,6 @@
+id=BootLogcat
+name=Boot Logcat and dmesg
+version=v0.1
+versionCode=1
+author=Rei Ryuki the Fixer
+description=Creates logcat at /data/adb/modules/BootLogcat/debug-boot-logcat.log and dmesg at /data/adb/modules/BootLogcat/debug-boot-dmesg.log while device boot.
