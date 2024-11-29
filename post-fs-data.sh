@@ -5,14 +5,26 @@ MODPATH=${0%/*}
 exec 2>$MODPATH/debug-pfsd.log
 set -x
 
-# dmesg
-dmesg > $MODPATH/debug-boot-dmesg.log
-
 # run
 FILE=$MODPATH/debug-boot-logcat.log
 rm -f $FILE
-if grep '^killall logcat' $MODPATH/service.sh; then
+if grep ^killall $MODPATH/service.sh; then
   logcat > $FILE &
+fi
+
+# run
+FILE=$MODPATH/debug-boot-dmesg.log
+rm -f $FILE
+if grep ^killall $MODPATH/service.sh; then
+  if [ -f /system/bin/dmesg ]; then
+    /system/bin/dmesg -w > $FILE &
+  elif [ -f /vendor/bin/dmesg ]; then
+    /vendor/bin/dmesg -w > $FILE &
+  elif [ -f /system/vendor/bin/dmesg ]; then
+    /system/vendor/bin/dmesg -w > $FILE &
+  else
+    dmesg > $FILE &
+  fi
 fi
 
 

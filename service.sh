@@ -10,6 +10,6 @@ until [ "`getprop sys.boot_completed`" == 1 ]; do
 done
 
 # stop
-killall logcat
+killall logcat dmesg
 
 

@@ -25,6 +25,7 @@
 - If you don't do above, issues will be closed immediately
 
 ## Credits and Contributors
+- @KaldirimMuhendisi
 - https://t.me/androidryukimodsdiscussions
 - You can contribute ideas about this Magisk Module here: https://t.me/androidappsportdevelopment
 
