@@ -7,14 +7,14 @@ set -x
 
 # run
 FILE=$MODPATH/debug-boot-logcat.log
-rm -f $FILE
+mv -f $FILE $FILE.bak
 if grep ^killall $MODPATH/service.sh; then
   logcat > $FILE &
 fi
 
 # run
 FILE=$MODPATH/debug-boot-dmesg.log
-rm -f $FILE
+mv -f $FILE $FILE.bak
 if grep ^killall $MODPATH/service.sh; then
   if [ -f /system/bin/dmesg ]; then
     /system/bin/dmesg -w > $FILE &
