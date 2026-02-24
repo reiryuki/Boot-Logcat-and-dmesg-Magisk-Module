@@ -23,7 +23,7 @@ if grep ^killall $MODPATH/service.sh; then
   elif [ -f /system/vendor/bin/dmesg ]; then
     /system/vendor/bin/dmesg -w > $FILE &
   else
-    dmesg > $FILE &
+    dmesg > $FILE
   fi
 fi
 
