@@ -3,6 +3,17 @@
 ## Descriptions
 - Creates logcat at /data/adb/modules/BootLogcat/debug-boot-logcat.log and dmesg at /data/adb/modules/BootLogcat/debug-boot-dmesg.log while device boot
 
+## Changelog
+
+v0.3
+- Moves previous logs to .bak
+
+v0.2
+- Run /system/bin/dmesg -w until boot complete
+
+v0.1
+- Initial release
+
 ## Screenshots
 - https://t.me/ryukimodsscreenshots/28
 
@@ -10,7 +21,7 @@
 - Magisk or Kitsune Mask or KernelSU or Apatch installed
 
 ## Installation Guide & Download Link
-- Install this module https://www.pling.com/p/2227830/ via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
+- Install this module via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - Reboot
 - Check the debug-boot-logcat.log and debug-boot-dmesg.log at /data/adb/modules/BootLogcat/
 
