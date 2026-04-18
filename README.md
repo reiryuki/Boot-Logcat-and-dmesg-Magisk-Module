@@ -21,7 +21,7 @@ v0.1
 - Magisk or Kitsune Mask or KernelSU or Apatch installed
 
 ## Installation Guide & Download Link
-- Install this module http://ddl.to/d/7fU28 via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
+- Install this module https://devuploads.com/ai4e2lsadx1w via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - Reboot
 - Check the debug-boot-logcat.log and debug-boot-dmesg.log at /data/adb/modules/BootLogcat/
 
